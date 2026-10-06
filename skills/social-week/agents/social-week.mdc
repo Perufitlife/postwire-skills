@@ -1,0 +1,17 @@
+---
+description: Plan, write and schedule a week of native social media posts (content calendar, per-network drafts, PostWire scheduling after approval). Use when the user asks for a content calendar, a week of posts, or to schedule posts across social networks.
+alwaysApply: false
+---
+
+# social-week (Cursor rule)
+
+Cursor also reads skills from `~/.cursor/skills/` and `.agents/skills/`; prefer installing the skill there. This rule
+is for projects that only use `.cursor/rules/`.
+
+When this rule applies:
+
+1. Read the skill raw: `curl -fsSL https://postwire.io/skills/social-week/SKILL.md` (do not summarize it, follow it).
+2. Brief → research → 7-day calendar with a different draft per network → the user's approval of the exact text,
+   networks and times → schedule with PostWire (the `postwire` MCP server, `https://postwire.io/api/mcp`, or the REST
+   API with `POSTWIRE_API_KEY` from the environment) → the queue and the what-to-measure checklist.
+3. Never publish or schedule without an explicit yes; never print or commit the API key.
