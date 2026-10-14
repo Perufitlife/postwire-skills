@@ -68,7 +68,7 @@ it to the user.
 ## REST (no MCP tools)
 
 Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
-`X-PostWire-Source: mcp-skill-instagram-post`.
+`X-PostWire-Source: mcp-sk-instagram`.
 
 | Need | Call |
 |---|---|

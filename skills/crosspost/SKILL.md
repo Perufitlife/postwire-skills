@@ -93,7 +93,7 @@ network after 24 hours; the same video often does very differently per network."
 ## REST (no MCP tools)
 
 Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
-`X-PostWire-Source: mcp-skill-crosspost`.
+`X-PostWire-Source: mcp-sk-crosspost`.
 
 | Need | Call |
 |---|---|
