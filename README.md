@@ -8,6 +8,9 @@ Skills that let an AI agent (Claude Code, Codex, Cursor, OpenClaw and 40+ agents
 | [`crosspost`](skills/crosspost/) | Cross-posts one short video or idea to TikTok, Instagram Reels, YouTube Shorts, Facebook, LinkedIn, Bluesky and more, a native caption per network, and returns every live link. |
 | [`tiktok-upload`](skills/tiktok-upload/) | Uploads and publishes (or schedules) a video or photo carousel to TikTok through the official Content Posting API: no developer app, no cookies. |
 | [`instagram-post`](skills/instagram-post/) | Publishes or schedules an Instagram photo, carousel (up to 10) or Reel through the official API, business or creator accounts. |
+| [`youtube-upload`](skills/youtube-upload/) | Uploads a video or Short to YouTube (now or scheduled) with a searchable title, public/unlisted/private: no Google Cloud project or OAuth client. ClawHub: `upload-to-youtube`. |
+| [`linkedin-post`](skills/linkedin-post/) | Writes and publishes a first-person LinkedIn post on your profile, link in the first comment, up to 20 images or a PDF carousel. ClawHub: `post-to-linkedin`. |
+| [`schedule-posts`](skills/schedule-posts/) | Schedules posts on any network: one at a set time, the next free queue slot, a CSV batch with a dry run, or a recurring post; then lists and cancels. |
 | [`postwire`](skills/postwire/) | Connects the agent to PostWire and publishes your first post. |
 
 Install:
