@@ -13,6 +13,14 @@ Skills that let an AI agent (Claude Code, Codex, Cursor, OpenClaw and 40+ agents
 | [`schedule-posts`](skills/schedule-posts/) | Schedules posts on any network: one at a set time, the next free queue slot, a CSV batch with a dry run, or a recurring post; then lists and cancels. |
 | [`postwire`](skills/postwire/) | Connects the agent to PostWire and publishes your first post. |
 
+Claude Code plugin (all the skills plus the PostWire MCP server, sign in once with OAuth):
+
+```text
+/plugin install postwire --marketplace Perufitlife/postwire-skills
+```
+
+On older Claude Code: `/plugin marketplace add Perufitlife/postwire-skills`, then `/plugin install postwire@postwire`.
+
 Install:
 
 ```bash

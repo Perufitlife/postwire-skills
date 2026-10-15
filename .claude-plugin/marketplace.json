@@ -1,0 +1,17 @@
+{
+  "name": "postwire",
+  "description": "PostWire for Claude Code: publish and schedule social media posts from your agent.",
+  "owner": {
+    "name": "PostWire",
+    "url": "https://postwire.io"
+  },
+  "plugins": [
+    {
+      "name": "postwire",
+      "source": "./",
+      "description": "Publish and schedule social media posts (TikTok, YouTube, Instagram, LinkedIn, Facebook Pages, Bluesky and more) from Claude Code through PostWire's hosted MCP server.",
+      "category": "productivity",
+      "homepage": "https://postwire.io/mcp/"
+    }
+  ]
+}
