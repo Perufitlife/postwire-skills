@@ -1,12 +1,13 @@
 {
   "name": "postwire",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Publish and schedule social media posts from Claude Code: TikTok and YouTube video uploads, Instagram posts and Reels, LinkedIn, Facebook Pages, Bluesky, Mastodon, Telegram, Discord and more, through PostWire's hosted MCP server (OAuth sign-in, no developer apps to register). Includes skills for crossposting, a weekly content calendar, bulk scheduling and per-network posting.",
   "author": {
     "name": "PostWire",
     "url": "https://postwire.io"
   },
   "homepage": "https://postwire.io/mcp/",
+  "privacyPolicyUrl": "https://postwire.io/privacy.html",
   "repository": "https://github.com/Perufitlife/postwire-skills",
   "license": "MIT-0",
   "keywords": [
@@ -19,5 +20,6 @@
     "crosspost",
     "content-calendar",
     "mcp"
-  ]
+  ],
+  "icon": "./.claude-plugin/icon.png"
 }
