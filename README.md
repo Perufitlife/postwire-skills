@@ -37,3 +37,10 @@ clawhub install crosspost        # OpenClaw
 Or tell your agent: `set up https://postwire.io/SKILL.md`.
 
 More: https://postwire.io/skills/social-week/
+
+## What this plugin runs and sends
+
+- **MCP server:** one remote server, `https://postwire.io/api/mcp` (Streamable HTTP). You sign in to PostWire with OAuth in your browser the first time a tool is used; no key is stored in the plugin.
+- **Data sent:** only what you ask the agent to publish or schedule (post text, media links, times, chosen networks) goes to postwire.io, which publishes it to the social accounts you connected there. Nothing else on your machine is read or sent.
+- **No hooks, no scripts, no local servers.** The skills are Markdown instructions. Their optional REST examples use a PostWire API key only if you create one in the dashboard and set it yourself.
+- Privacy policy: https://postwire.io/privacy.html · Terms: https://postwire.io/terms.html · Support: support@postwire.io
