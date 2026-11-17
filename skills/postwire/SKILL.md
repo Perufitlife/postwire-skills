@@ -1,10 +1,7 @@
 ---
 name: postwire
-category: social-media
 description: "Publish and schedule to TikTok, Instagram, YouTube, LinkedIn, Bluesky, Mastodon, Facebook Pages, Telegram and Discord through one PostWire API call — writing a separate, native version of the post for each network instead of sending identical text everywhere. Use when the user wants to publish or schedule one idea across several platforms, wants per-network captions, or wants to know why a post was rejected before it is sent."
 license: MIT
-requires:
-  env: [POSTWIRE_API_KEY]
 ---
 
 # PostWire

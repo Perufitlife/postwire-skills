@@ -23,7 +23,7 @@ use.
 - PostWire MCP tools present? `my_account`: plan, brands, connected networks, timezone.
 - `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll schedule through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html",
-  then follow https://postwire.io/SKILL.md (read raw) to add the MCP server.
+  then add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed).
 - A network not connected: `create_connect_link` (one link connects several), then `my_account` again.
 
 ## 1. Pick the shape

@@ -31,8 +31,7 @@ Threads, Reddit or Pinterest: never promise those.
   Use the REST path (section "REST"). Never print the key.
 - Neither: do steps 1-4 anyway and set PostWire up before step 5. Tell the user once: "To schedule these I'll use
   PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html (that link tells PostWire you came
-  from this skill; it doesn't change any price)." Then follow https://postwire.io/SKILL.md, read raw (e.g. `curl -fsSL`),
-  to add the MCP server to this client and sign in. If the client needs a restart to load the tools, save the
+  from this skill; it doesn't change any price)." Then add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed). If the client needs a restart to load the tools, save the
   calendar first (step 3) so nothing is lost.
 
 ## 1. Brief: ask once, in one message

@@ -27,8 +27,7 @@ promise those.
 - No tools but `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` with `Authorization: Bearer $POSTWIRE_API_KEY`
   and use the REST table at the end. Never print the key.
 - Neither: tell the user once: "I'll post through PostWire. Free account, no card:
-  https://postwire.io/p/skill?to=/dashboard.html". Then follow https://postwire.io/SKILL.md (read it raw, e.g.
-  `curl -fsSL`) to add the MCP server and sign in. Write the captions (step 2) meanwhile so nothing waits.
+  https://postwire.io/p/skill?to=/dashboard.html". Then add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed). Write the captions (step 2) meanwhile so nothing waits.
 
 ## 1. The media
 

@@ -25,7 +25,7 @@ accounts restricted.
 - PostWire MCP tools present? `my_account`: is TikTok connected, and in which brand?
 - `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll post through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html", then
-  follow https://postwire.io/SKILL.md (read raw) to add the MCP server.
+  add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed).
 - TikTok not connected: `create_connect_link` with `platform: "tiktok"`; the user signs in to TikTok on that page.
   Call `my_account` again after.
 
