@@ -216,11 +216,6 @@ posts that were not approved.
       "result": null } ] }
 ```
 
-If this skill's folder has `scripts/schedule-week.mjs` and Node 18+ is available, it turns this file into the rows
-above, checks limits and media, and runs the dry run (`--confirm` schedules; it never schedules without it;
-`--report` reads what worked for step 7): `node scripts/schedule-week.mjs social-week/2026-10-12.json` with
-`POSTWIRE_API_KEY` set.
-
 ## REST (no MCP tools)
 
 Base `https://postwire.io`. Headers: `Authorization: Bearer $POSTWIRE_API_KEY` (from the environment; never written to

@@ -21,18 +21,7 @@ Claude Code plugin (all the skills plus the PostWire MCP server, sign in once wi
 
 On older Claude Code: `/plugin marketplace add Perufitlife/postwire-skills`, then `/plugin install postwire@postwire`.
 
-Install:
-
-```bash
-npx skills add https://postwire.io --skill social-week
-```
-
-Any skill from this repo:
-
-```bash
-npx skills add Perufitlife/postwire-skills --skill crosspost
-clawhub install crosspost        # OpenClaw
-```
+Other agents: each skill is one folder under `skills/` with a `SKILL.md`. Copy the folder into your agent's skills directory, or follow the steps at https://postwire.io/skills/social-week/.
 
 Or tell your agent: `set up https://postwire.io/SKILL.md`.
 

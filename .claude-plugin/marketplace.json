@@ -1,9 +1,10 @@
 {
   "name": "postwire",
-  "description": "PostWire for Claude Code: publish and schedule social media posts from your agent.",
   "owner": {
-    "name": "PostWire",
-    "url": "https://postwire.io"
+    "name": "PostWire"
+  },
+  "metadata": {
+    "description": "PostWire for Claude Code: publish and schedule social media posts from your agent."
   },
   "plugins": [
     {
