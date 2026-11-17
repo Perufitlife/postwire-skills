@@ -23,7 +23,7 @@ Never use browser automation or ask for the user's LinkedIn password: LinkedIn r
 ## 0. Connection
 
 - PostWire MCP tools present? `my_account`: is LinkedIn connected, and in which brand?
-- `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
+- The person gave you their PostWire API key? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll post through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html", then
   add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed). Write the post (step 1) meanwhile.
 - LinkedIn not connected: `create_connect_link` with `platform: "linkedin"`. Call `my_account` again after.
@@ -65,7 +65,7 @@ Give the post link from the result, and the first comment's status.
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
+Base `https://postwire.io`; headers `Authorization: Bearer YOUR_API_KEY`, `Content-Type: application/json`,
 `X-PostWire-Source: mcp-sk-linkedin`.
 
 | Need | Call |

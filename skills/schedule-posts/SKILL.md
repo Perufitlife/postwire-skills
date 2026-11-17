@@ -21,7 +21,7 @@ use.
 ## 0. Connection
 
 - PostWire MCP tools present? `my_account`: plan, brands, connected networks, timezone.
-- `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
+- The person gave you their PostWire API key? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll schedule through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html",
   then add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed).
 - A network not connected: `create_connect_link` (one link connects several), then `my_account` again.
@@ -67,7 +67,7 @@ above), `bulk_rows_invalid` (fix the rows it names), `bulk_already_scheduled` (t
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
+Base `https://postwire.io`; headers `Authorization: Bearer YOUR_API_KEY`, `Content-Type: application/json`,
 `X-PostWire-Source: mcp-sk-schedule`.
 
 | Need | Call |

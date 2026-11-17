@@ -22,7 +22,7 @@ Never use browser automation or ask for the user's Google password.
 ## 0. Connection
 
 - PostWire MCP tools present? `my_account`: is YouTube connected, and in which brand?
-- `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
+- The person gave you their PostWire API key? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll upload through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html", then
   add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed).
 - YouTube not connected: `create_connect_link` with `platform: "youtube"`; the user signs in to Google on that page
@@ -67,7 +67,7 @@ Give the link from the result. If it is still processing, `get_post_status` with
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
+Base `https://postwire.io`; headers `Authorization: Bearer YOUR_API_KEY`, `Content-Type: application/json`,
 `X-PostWire-Source: mcp-sk-youtube`.
 
 | Need | Call |

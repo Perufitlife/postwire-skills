@@ -38,9 +38,9 @@ platform rejects them:
 
 - An account at [postwire.io](https://postwire.io) — free tier: 1 brand, 20 posts/month, 2 networks per post, no card
 - Networks connected in the dashboard (one OAuth click each)
-- `POSTWIRE_API_KEY` in the environment
+- A PostWire API key (dashboard → API keys), given to you by the person
 
-**Auth is `Authorization: Bearer $POSTWIRE_API_KEY`.**
+**Auth is `Authorization: Bearer YOUR_API_KEY`.**
 
 One gotcha worth knowing: the dashboard shows a *preview* key immediately after signup, before the
 email is confirmed. That key cannot publish. If the API answers `"This is a preview key"`
@@ -53,7 +53,7 @@ Base URL: `https://postwire.io/api`
 ### Check what is connected
 
 ```bash
-curl https://postwire.io/api/me -H "Authorization: Bearer $POSTWIRE_API_KEY"
+curl https://postwire.io/api/me -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 Returns the plan, the monthly usage, and `connections[]` — publish only to networks listed there,
@@ -63,7 +63,7 @@ otherwise the call fails with `code: "not_connected"` and the offending platform
 
 ```bash
 curl -X POST https://postwire.io/api/generate \
-  -H "Authorization: Bearer $POSTWIRE_API_KEY" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "We shipped streaming uploads: 1GB videos now go through in 11 seconds",
@@ -95,7 +95,7 @@ timeline. Generate, show, confirm, then post.
 
 ```bash
 curl -X POST https://postwire.io/api/post \
-  -H "Authorization: Bearer $POSTWIRE_API_KEY" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "platforms": ["linkedin", "bluesky"],
@@ -117,7 +117,7 @@ The response is **per platform**, and one failure does not cancel the rest:
 
 ```bash
 curl -X POST https://postwire.io/api/schedule \
-  -H "Authorization: Bearer $POSTWIRE_API_KEY" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "run_at": "2026-09-01T09:00:00Z",
@@ -134,7 +134,7 @@ a post that cannot work is rejected now instead of failing quietly at 7am.
 
 ```bash
 curl -X POST https://postwire.io/api/week \
-  -H "Authorization: Bearer $POSTWIRE_API_KEY" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{ "topic": "what we learned running a one-person SaaS", "platforms": ["linkedin", "bluesky"], "days": 5 }'
 ```

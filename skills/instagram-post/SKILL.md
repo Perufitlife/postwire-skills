@@ -22,7 +22,7 @@ Never use browser automation or share the user's password: Instagram restricts a
 ## 0. Connection
 
 - PostWire MCP tools present? `my_account`: is Instagram connected, and in which brand?
-- `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` (REST table below). Never print the key.
+- The person gave you their PostWire API key? `GET https://postwire.io/api/me` (REST table below). Never print the key.
 - Neither: "I'll post through PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html", then
   add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed).
 - Instagram not connected: `create_connect_link` with `platform: "instagram"`. It must be a business or creator
@@ -67,7 +67,7 @@ it to the user.
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
+Base `https://postwire.io`; headers `Authorization: Bearer YOUR_API_KEY`, `Content-Type: application/json`,
 `X-PostWire-Source: mcp-sk-instagram`.
 
 | Need | Call |

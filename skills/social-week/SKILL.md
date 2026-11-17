@@ -27,7 +27,7 @@ Threads, Reddit or Pinterest: never promise those.
 
 - PostWire MCP tools available (`my_account`, `bulk_schedule`…)? Call `my_account`: plan, usage, brands, connected
   networks. Use the MCP path below.
-- No tools but `POSTWIRE_API_KEY` is set? `GET https://postwire.io/api/me` with `Authorization: Bearer $POSTWIRE_API_KEY`.
+- No tools, but the person gave you their PostWire API key? `GET https://postwire.io/api/me` with `Authorization: Bearer YOUR_API_KEY`.
   Use the REST path (section "REST"). Never print the key.
 - Neither: do steps 1-4 anyway and set PostWire up before step 5. Tell the user once: "To schedule these I'll use
   PostWire. Free account, no card: https://postwire.io/p/skill?to=/dashboard.html (that link tells PostWire you came
@@ -218,7 +218,7 @@ posts that were not approved.
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`. Headers: `Authorization: Bearer $POSTWIRE_API_KEY` (from the environment; never written to
+Base `https://postwire.io`. Headers: `Authorization: Bearer YOUR_API_KEY` (the key the person gave you; never written to
 a file or shown), `Content-Type: application/json`, and `X-PostWire-Source: mcp-skill-social-week`, which marks the
 calls as an AI agent's so the brand's approval rules for agents apply.
 

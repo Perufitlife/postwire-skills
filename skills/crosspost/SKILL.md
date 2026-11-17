@@ -24,7 +24,7 @@ promise those.
 ## 0. Connection (10 seconds)
 
 - PostWire MCP tools present (`my_account`, `post_to_social`…)? Call `my_account`: plan, brands, connected networks.
-- No tools but `POSTWIRE_API_KEY` set? `GET https://postwire.io/api/me` with `Authorization: Bearer $POSTWIRE_API_KEY`
+- No tools, but the person gave you their PostWire API key? `GET https://postwire.io/api/me` with `Authorization: Bearer YOUR_API_KEY`
   and use the REST table at the end. Never print the key.
 - Neither: tell the user once: "I'll post through PostWire. Free account, no card:
   https://postwire.io/p/skill?to=/dashboard.html". Then add PostWire's MCP server, `https://postwire.io/api/mcp` (HTTP, OAuth sign-in in the browser; it is already bundled when this skill came with the PostWire plugin, so there only `/mcp` → sign in is needed). Write the captions (step 2) meanwhile so nothing waits.
@@ -91,7 +91,7 @@ network after 24 hours; the same video often does very differently per network."
 
 ## REST (no MCP tools)
 
-Base `https://postwire.io`; headers `Authorization: Bearer $POSTWIRE_API_KEY`, `Content-Type: application/json`,
+Base `https://postwire.io`; headers `Authorization: Bearer YOUR_API_KEY`, `Content-Type: application/json`,
 `X-PostWire-Source: mcp-sk-crosspost`.
 
 | Need | Call |
